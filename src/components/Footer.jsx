@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="footer-column">
               <h3>CONNECT</h3>
               <a
-                href="https://github.com/"
+                href="https://github.com/nidhi-mangroliya-codes"
                 target="_blank"
                 rel="noreferrer"
               >

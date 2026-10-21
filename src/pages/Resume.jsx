@@ -7,7 +7,7 @@ const Resume = () => {
   return (
     <main className="resume-page">
       <div className="resume-toolbar">
-        <span>PROFESSIONAL RESUME</span>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button onClick={handleDownload}>
           Download / Save as PDF ↓
         </button>
@@ -25,25 +25,30 @@ const Resume = () => {
 
           <div className="contact-grid">
             <p>⌖ Chital, Amreli, Gujarat, India</p>
-            <p>☎ YOUR MOBILE NUMBER</p>
-            <p>✉ YOUR PROFESSIONAL EMAIL</p>
+            <p>☎ 9327993977</p>
+            <p>✉ nidhimangroliya10@gmail.com</p>
+
             <p>
               GitHub:{" "}
               <a
-                href="https://github.com/nidhimangroliya10-png"
+                href="https://github.com/nidhi-mangroliya-codes"
                 target="_blank"
                 rel="noreferrer"
               >
                 View GitHub Profile
               </a>
             </p>
+
             <p>Portfolio: Add your live website link</p>
           </div>
         </header>
 
         <div className="resume-top-grid">
           <section className="resume-section summary-section">
-            <h3><span>01</span> PROFESSIONAL SUMMARY</h3>
+            <h3>
+              <span>01</span> PROFESSIONAL SUMMARY
+            </h3>
+
             <p>
               BCA graduate seeking an entry-level Frontend Developer
               or React.js Developer role. Knowledge of HTML, CSS,
@@ -55,7 +60,9 @@ const Resume = () => {
           </section>
 
           <section className="resume-section skills-section">
-            <h3><span>02</span> TECHNICAL SKILLS</h3>
+            <h3>
+              <span>02</span> TECHNICAL SKILLS
+            </h3>
 
             <div className="skill-row">
               <strong>Languages</strong>
@@ -107,8 +114,11 @@ const Resume = () => {
 
         <div className="resume-bottom-grid">
           <section className="resume-section projects-section">
-            <h3><span>03</span> PROJECTS</h3>
+            <h3>
+              <span>03</span> PROJECTS
+            </h3>
 
+            {/* Project 1: ShopPilot */}
             <div className="project-item">
               <div className="project-heading">
                 <h4>ShopPilot</h4>
@@ -131,10 +141,18 @@ const Resume = () => {
               </ul>
 
               <p className="project-link">
-                <strong>GitHub:</strong> Add repository link after upload
+                <strong>GitHub: </strong>
+                <a
+                  href="https://github.com/nidhi-mangroliya-codes/shoppilot"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Source Code ↗
+                </a>
               </p>
             </div>
 
+            {/* Project 2: Car Showcase */}
             <div className="project-item">
               <div className="project-heading">
                 <h4>Car Showcase</h4>
@@ -157,14 +175,24 @@ const Resume = () => {
               </ul>
 
               <p className="project-link">
-                <strong>GitHub:</strong> Add repository link after upload
+                <strong>GitHub: </strong>
+                <a
+                  href="https://github.com/nidhi-mangroliya-codes/bugatti-electric-blue"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Source Code ↗
+                </a>
               </p>
             </div>
 
+            {/* Project 3: JobTrack Pro */}
             <div className="project-item">
               <div className="project-heading">
                 <h4>JobTrack Pro</h4>
-                <span className="project-tag">DASHBOARD PROJECT</span>
+                <span className="project-tag">
+                  DASHBOARD PROJECT
+                </span>
               </div>
 
               <p className="project-tech">
@@ -183,14 +211,23 @@ const Resume = () => {
               </ul>
 
               <p className="project-link">
-                <strong>GitHub:</strong> Add repository link after upload
+                <strong>GitHub: </strong>
+                <a
+                  href="https://github.com/nidhi-mangroliya-codes/jobtrack"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Source Code ↗
+                </a>
               </p>
             </div>
           </section>
 
           <aside className="resume-sidebar">
             <section className="resume-section">
-              <h3><span>04</span> EDUCATION</h3>
+              <h3>
+                <span>04</span> EDUCATION
+              </h3>
 
               <div className="info-card">
                 <h4>Bachelor of Computer Applications (BCA)</h4>
@@ -223,7 +260,9 @@ const Resume = () => {
             </section>
 
             <section className="resume-section additional-section">
-              <h3><span>05</span> ADDITIONAL INFO</h3>
+              <h3>
+                <span>05</span> ADDITIONAL INFO
+              </h3>
 
               <div className="info-card">
                 <strong>Career Level</strong>

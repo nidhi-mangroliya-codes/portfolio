@@ -1,0 +1,345 @@
+
+.projects-page {
+  padding-top: 64px;
+  padding-bottom: 70px;
+}
+
+.projects-heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.projects-heading .eyebrow {
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  opacity: 0.7;
+}
+
+.projects-heading h1 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.projects-heading h1 span {
+  color: #8b75f5;
+}
+
+.projects-subtitle {
+  max-width: 550px;
+  margin: 18px auto 0;
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: 0.72;
+}
+
+/* Two equal columns: 2 projects on top, 2 below */
+
+.portfolio-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+  width: 100%;
+  max-width: 1050px;            
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.portfolio-project-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid rgba(130, 130, 150, 0.18);
+  border-radius: 20px;
+  background: var(--project-card-bg, #fff);
+  box-shadow: 0 8px 28px rgba(30, 30, 50, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.portfolio-project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 42px rgba(30, 30, 50, 0.12);
+  border-color: rgba(139, 117, 245, 0.45);
+}
+
+/* Project screenshot */
+
+.portfolio-project-image {
+  position: relative;
+  width: 100%;
+  height: 275px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #f0eff7;
+}
+
+.portfolio-project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.45s ease;
+}
+
+.portfolio-project-card:hover
+.portfolio-project-image img {
+  transform: scale(1.035);
+}
+
+.project-image-fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #38324d;
+  background: linear-gradient(135deg, #f1edff, #e5f4f2);
+}
+
+.project-image-fallback span {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.project-image-fallback small {
+  font-size: 12px;
+}
+
+/* Number badge */
+
+.portfolio-project-number {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  color: #fff;
+  background: rgba(25, 25, 35, 0.62);
+  backdrop-filter: blur(10px);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Open icon */
+
+.portfolio-project-open {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #28223d;
+  background: #fff;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.portfolio-project-card:hover
+.portfolio-project-open {
+  transform: rotate(45deg);
+  background: #e9e2ff;
+}
+
+/* Card content */
+
+.portfolio-project-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.portfolio-project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.portfolio-project-title-row h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.portfolio-title-arrow {
+  flex-shrink: 0;
+  opacity: 0.55;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.portfolio-project-card:hover .portfolio-title-arrow {
+  transform: translate(3px, -3px);
+  opacity: 1;
+}
+
+.portfolio-project-info > p {
+  margin: 12px 0 22px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.72;
+}
+
+.portfolio-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.portfolio-project-tech span {
+  padding: 7px 11px;
+  border: 1px solid rgba(130, 130, 150, 0.2);
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+/* Different subtle accents */
+
+.jobtrack {
+  --project-card-bg: #ffffff;
+}
+
+.pagecraft {
+  --project-card-bg: #ffffff;
+}
+
+.shoppilot {
+  --project-card-bg: #ffffff;
+}
+
+.bugatti {
+  --project-card-bg: #ffffff;
+}
+
+.projects-footer-note {
+  margin: 42px auto 0;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 700px) {
+  .projects-page {
+    padding-top: 42px;
+    padding-bottom: 45px;
+  }
+
+  .projects-heading {
+    margin-bottom: 32px;
+  }
+
+  .projects-heading h1 {
+    letter-spacing: -1px;
+  }
+
+  .projects-subtitle {
+    font-size: 14px;
+  }
+
+  .portfolio-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portfolio-project-image {
+    height: clamp(210px, 58vw, 300px);
+  }
+
+  .portfolio-project-info {
+    padding: 20px;
+  }
+
+  .portfolio-project-title-row h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .portfolio-projects-grid {
+    gap: 22px;
+  }
+
+  .portfolio-project-image {
+    height: 225px;
+  }
+
+  .portfolio-project-info {
+    padding: 18px;
+  }
+}
+/* Force Projects page background */
+
+body:has(.projects-page) {
+  background-color: #f8f8fc !important;
+}
+
+.projects-page {
+  background: radial-gradient(
+    circle at 10% 10%,
+    #eee9ff 0%,
+    #f8f8fc 40%,
+    #f8f8fc 100%
+  ) !important;
+  min-height: 100vh;
+}/* Full-width Projects Page Background */
+
+body:has(.projects-page) {
+  background: #f8f8fc !important;
+  margin: 0;
+}
+
+#root:has(.projects-page) {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      ellipse at top left,
+      rgba(139, 117, 245, 0.14),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      rgba(112, 89, 223, 0.09),
+      transparent 45%
+    ),
+    #f8f8fc !important;
+}
+
+.projects-page {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: transparent !important;
+}

@@ -1,0 +1,1062 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+.nidhi-home {
+  --ink: #20243b;
+  --muted: #737b90;
+  --blue: #7059df;
+  --line: #e7eaf1;
+
+  color: var(--ink);
+  background: #fff;
+  font-family: 'DM Sans', sans-serif;
+  overflow: hidden;
+}
+
+.nidhi-home * {
+  box-sizing: border-box;
+}
+
+.nidhi-home a {
+  text-decoration: none;
+}
+
+.nidhi-home h1,
+.nidhi-home h2,
+.nidhi-home h3,
+.nidhi-home p {
+  margin-top: 0;
+}
+
+.nidhi-home h1,
+.nidhi-home h2,
+.nidhi-home h3 {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.nidhi-home .home-hero {
+  min-height: 650px;
+  padding: 90px max(7%, calc((100% - 1160px) / 2)) 95px;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: center;
+  gap: 55px;
+  position: relative;
+  background:
+    radial-gradient(ellipse at 88% 20%, #e6ddff 0%, transparent 32%),
+    radial-gradient(ellipse at 70% 85%, #e1f3ff 0%, transparent 35%),
+    #ffffff;
+}
+
+.nidhi-home .hero-content {
+  max-width: 620px;
+  position: relative;
+  z-index: 2;
+}
+
+.nidhi-home .hero-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #d8e8dc;
+  background: #f1faf3;
+  color: #317348;
+  padding: 9px 14px;
+  margin-bottom: 28px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nidhi-home .availability-dot {
+  width: 8px;
+  height: 8px;
+  background: #35a65a;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #dff3e3;
+}
+
+.nidhi-home .hero-eyebrow {
+  color: #6b55d9;
+  letter-spacing: 2.3px;
+  font-size: 11px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.nidhi-home .home-hero h1 {
+  font-size: clamp(40px, 4.6vw, 61px);
+  line-height: 1.12;
+  letter-spacing: -2.8px;
+  font-weight: 800;
+  color: #20243b;
+  margin-bottom: 24px;
+}
+
+.nidhi-home .hero-highlight {
+  color: #7059df;
+}
+
+.nidhi-home .hero-description {
+  max-width: 475px;
+  color: #737b90;
+  font-size: 15px;
+  line-height: 1.95;
+  margin-bottom: 28px;
+}
+
+.nidhi-home .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 13px;
+}
+
+.nidhi-home .hero-primary-btn,
+.nidhi-home .hero-secondary-btn,
+.nidhi-home .cta-button {
+  min-height: 49px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.nidhi-home .hero-primary-btn,
+.nidhi-home .cta-button {
+  background: #7059df;
+  color: #fff;
+  box-shadow: 0 9px 23px #7059df2b;
+}
+
+.nidhi-home .hero-primary-btn:hover,
+.nidhi-home .cta-button:hover {
+  background: #5941c7;
+  transform: translateY(-2px);
+}
+
+.nidhi-home .hero-secondary-btn {
+  color: var(--ink);
+  border: 1px solid #e2e3ee;
+  background: #ffffffc9;
+}
+
+.nidhi-home .hero-secondary-btn:hover {
+  border-color: #7059df;
+  color: #7059df;
+}
+
+.nidhi-home .hero-tech-note {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #7d8496;
+  font-size: 11px;
+}
+
+.nidhi-home .hero-note-line {
+  width: 27px;
+  height: 2px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #7059df;
+}
+
+/* =========================
+   HERO PROFILE PHOTO
+   Gradient border + shadow
+   No corner boxes
+========================= */
+
+.nidhi-home .hero-visual {
+  min-height: 430px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.nidhi-home .hero-visual-label {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  color: #8a7eb7;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.nidhi-home .hero-art-card.hero-profile-card {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  height: 365px;
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 24px;
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(
+      135deg,
+      #7059df 0%,
+      #a78bfa 30%,
+      #65c9e8 65%,
+      #7059df 100%
+    ) border-box;
+
+  box-shadow:
+    0 20px 45px rgba(112, 89, 223, 0.18),
+    0 0 0 4px rgba(112, 89, 223, 0.06),
+    0 0 22px rgba(101, 201, 232, 0.12);
+
+  overflow: visible;
+  transform: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.nidhi-home .hero-art-card.hero-profile-card:hover {
+  transform: none;
+  box-shadow:
+    0 25px 50px rgba(112, 89, 223, 0.24),
+    0 0 0 5px rgba(112, 89, 223, 0.08),
+    0 0 28px rgba(101, 201, 232, 0.22);
+}
+
+.nidhi-home .hero-profile-photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 17px;
+  background: #f0eff5;
+  box-shadow: inset 0 0 20px rgba(32, 36, 59, 0.06);
+}
+
+.nidhi-home .hero-profile-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 0;
+  transform: none;
+  transition: none;
+}
+
+/* Decorative dots only — no corner boxes */
+
+.nidhi-home .hero-visual::before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  right: 25px;
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  background: #b9a8ff;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.nidhi-home .hero-visual::after {
+  content: "";
+  position: absolute;
+  bottom: 47px;
+  left: 24px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #65c9e8;
+  box-shadow: 0 0 0 5px rgba(101, 201, 232, 0.12);
+  pointer-events: none;
+}
+
+.nidhi-home .hero-profile-tag {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 30px;
+  background: rgba(32, 36, 59, 0.84);
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 5px 18px rgba(32, 36, 59, 0.12);
+}
+
+.nidhi-home .profile-status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #8ef0ae;
+  box-shadow: 0 0 0 3px rgba(142, 240, 174, 0.15);
+}
+
+.nidhi-home .hero-profile-caption {
+  display: none;
+}
+
+/* Hide corner elements if they exist in Home.jsx */
+
+.nidhi-home .profile-corner {
+  display: none !important;
+}
+
+/* =========================
+   SHARED SECTION LABELS
+========================= */
+
+.nidhi-home .section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #727f96;
+  margin-bottom: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.nidhi-home .section-label span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: #eae7ff;
+  color: #7059df;
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.nidhi-home .home-about {
+  padding: 75px max(7%, calc((100% - 1160px) / 2)) 85px;
+}
+
+.nidhi-home .about-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.nidhi-home .about-heading h2,
+.nidhi-home .toolkit-heading h2,
+.nidhi-home .projects-heading h2 {
+  font-size: clamp(32px, 4vw, 47px);
+  line-height: 1.2;
+  letter-spacing: -1.8px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.nidhi-home .about-heading h2 span,
+.nidhi-home .toolkit-heading h2 span,
+.nidhi-home .projects-heading h2 span {
+  color: #7059df;
+}
+
+.nidhi-home .about-copy p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.95;
+  margin-bottom: 16px;
+}
+
+.nidhi-home .text-link,
+.nidhi-home .all-projects-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #7059df;
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 7px;
+  transition: gap 0.2s ease;
+}
+
+.nidhi-home .text-link:hover,
+.nidhi-home .all-projects-link:hover {
+  gap: 14px;
+}
+
+.nidhi-home .about-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 55px;
+}
+
+.nidhi-home .value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 20px 16px;
+  border: 1px solid #efedf8;
+  border-radius: 15px;
+  background: #fbfbff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nidhi-home .value-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px #28214c0b;
+}
+
+.nidhi-home .value-icon {
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+}
+
+.nidhi-home .value-blue {
+  background: #eae7ff;
+  color: #7059df;
+}
+
+.nidhi-home .value-pink {
+  background: #ffe8f1;
+  color: #c74782;
+}
+
+.nidhi-home .value-green {
+  background: #e0f7eb;
+  color: #208657;
+}
+
+.nidhi-home .value-item h3 {
+  font-size: 13px;
+  margin: 2px 0 7px;
+}
+
+.nidhi-home .value-item p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* =========================
+   TOOLKIT
+========================= */
+
+.nidhi-home .home-toolkit {
+  padding: 95px max(7%, calc((100% - 1160px) / 2));
+  background: #f7f9fd;
+}
+
+.nidhi-home .toolkit-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 38px;
+}
+
+.nidhi-home .toolkit-heading > div:first-child > p,
+.nidhi-home .projects-heading > div > p {
+  max-width: 500px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 18px 0 0;
+}
+
+.nidhi-home .toolkit-heading-icon {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(135deg, #7059df, #a78bfa);
+  border-radius: 20px;
+  box-shadow: 0 12px 25px #6d68e52b;
+}
+
+.nidhi-home .toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.nidhi-home .tool-card {
+  position: relative;
+  min-height: 116px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nidhi-home .tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px #18233b12;
+}
+
+.nidhi-home .tool-card.html {
+  background: #fff0e9;
+  border-color: #ffdfcf;
+  --tool-color: #e65b2e;
+}
+
+.nidhi-home .tool-card.css {
+  background: #eaf3ff;
+  border-color: #d7e8ff;
+  --tool-color: #2468ce;
+}
+
+.nidhi-home .tool-card.javascript {
+  background: #fff8d9;
+  border-color: #f7ebad;
+  --tool-color: #987300;
+}
+
+.nidhi-home .tool-card.react {
+  background: #e2f8fc;
+  border-color: #c8eff6;
+  --tool-color: #0788a8;
+}
+
+.nidhi-home .tool-card.github {
+  background: #f0eafe;
+  border-color: #e3d9ff;
+  --tool-color: #6941b7;
+}
+
+.nidhi-home .tool-card.vscode {
+  background: #e5f8ed;
+  border-color: #d0f0dc;
+  --tool-color: #218453;
+}
+
+.nidhi-home .tool-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #ffffffb8;
+  color: var(--tool-color);
+  font-size: 22px;
+  font-weight: 800;
+  box-shadow: 0 3px 10px #18233b08;
+}
+
+.nidhi-home .tool-card.javascript .tool-icon,
+.nidhi-home .tool-card.vscode .tool-icon {
+  font-size: 16px;
+}
+
+.nidhi-home .tool-details h3 {
+  color: var(--ink);
+  font-size: 14px;
+  margin: 0 0 7px;
+}
+
+.nidhi-home .tool-details p {
+  color: #6f7b90;
+  font-size: 11px;
+  margin: 0;
+}
+
+.nidhi-home .tool-arrow {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  color: var(--tool-color);
+  opacity: 0.7;
+}
+
+.nidhi-home .toolkit-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 17px 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.nidhi-home .note-sparkle {
+  color: #e5a62b;
+  font-size: 22px;
+}
+
+.nidhi-home .toolkit-note p {
+  color: #6d778b;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.nidhi-home .home-projects {
+  padding: 100px max(7%, calc((100% - 1160px) / 2));
+}
+
+.nidhi-home .projects-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 42px;
+}
+
+.nidhi-home .all-projects-link {
+  flex-shrink: 0;
+  margin-bottom: 5px;
+}
+
+.nidhi-home .home-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.nidhi-home .home-project-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e7eaf1;
+  border-radius: 19px;
+  background: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nidhi-home .home-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px #18233b0c;
+}
+
+.nidhi-home .project-artwork {
+  position: relative;
+  display: block;
+  height: 250px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 13px;
+  background: #e8effb;
+}
+
+.nidhi-home .project-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.nidhi-home .home-project-card:hover .project-image {
+  transform: scale(1.045);
+}
+
+.nidhi-home .project-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: #fff;
+  background: #17233bc9;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.nidhi-home .project-image-arrow {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #202638;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+.nidhi-home .home-project-card:hover .project-image-arrow {
+  transform: rotate(45deg);
+}
+
+.nidhi-home .home-project-info {
+  padding: 17px 23px 24px;
+}
+
+.nidhi-home .home-project-info h3 {
+  font-size: 21px;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.nidhi-home .home-project-info > p {
+  min-height: 48px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.nidhi-home .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.nidhi-home .project-tags span {
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: #f1f4f9;
+  color: #58657b;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.nidhi-home .project-blue .project-tags span:first-child {
+  background: #eaf0ff;
+  color: #3563e9;
+}
+
+.nidhi-home .project-purple .project-tags span:first-child {
+  background: #f0eafe;
+  color: #6941b7;
+}
+
+.nidhi-home .project-orange .project-tags span:first-child {
+  background: #fff0e9;
+  color: #c65a2e;
+}
+
+.nidhi-home .project-green .project-tags span:first-child {
+  background: #e5f8ed;
+  color: #218453;
+}
+
+.nidhi-home .project-open-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 23px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.nidhi-home .project-open-link:hover {
+  color: #7059df;
+}
+
+.nidhi-home .projects-bottom-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.nidhi-home .projects-bottom-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #7059df;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* =========================
+   CONTACT CTA
+========================= */
+
+.nidhi-home .home-cta {
+  position: relative;
+  margin: 0 max(7%, calc((100% - 1160px) / 2)) 80px;
+  padding: 65px 25px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 15% 20%, #657ffb33, transparent 30%),
+    radial-gradient(circle at 90% 90%, #a78bfa30, transparent 32%),
+    #20243b;
+  color: #fff;
+}
+
+.nidhi-home .cta-sparkle {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: #ffffff17;
+  color: #c6bbff;
+  margin-bottom: 22px;
+}
+
+.nidhi-home .cta-eyebrow {
+  color: #c6bbff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+.nidhi-home .home-cta h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  margin-bottom: 17px;
+}
+
+.nidhi-home .home-cta h2 span {
+  color: #c6bbff;
+}
+
+.nidhi-home .cta-description {
+  max-width: 470px;
+  margin: 0 auto 27px;
+  color: #c1cadd;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.nidhi-home .cta-button {
+  background: #fff;
+  color: #5941c7;
+}
+
+.nidhi-home .cta-button:hover {
+  background: #eae7ff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .nidhi-home .home-hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 75px;
+  }
+
+  .nidhi-home .hero-content {
+    max-width: 650px;
+  }
+
+  .nidhi-home .hero-visual {
+    width: 100%;
+    max-width: 500px;
+    min-height: 410px;
+    margin: auto;
+  }
+
+  .nidhi-home .hero-art-card.hero-profile-card {
+    width: 300px;
+    height: 345px;
+  }
+
+  .nidhi-home .about-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .nidhi-home .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .nidhi-home .toolkit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 650px) {
+  .nidhi-home .home-hero,
+  .nidhi-home .home-about,
+  .nidhi-home .home-toolkit,
+  .nidhi-home .home-projects {
+    padding: 60px 20px;
+  }
+
+  .nidhi-home .home-hero h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .nidhi-home .hero-visual {
+    width: 100%;
+    min-height: 355px;
+    margin: 0 auto;
+  }
+
+  .nidhi-home .hero-art-card.hero-profile-card {
+    width: 255px;
+    height: 305px;
+    padding: 5px;
+    border-radius: 19px;
+  }
+
+  .nidhi-home .hero-profile-photo {
+    border-radius: 14px;
+  }
+
+  .nidhi-home .hero-profile-tag {
+    bottom: 12px;
+    padding: 9px 12px;
+    font-size: 8px;
+  }
+
+  .nidhi-home .hero-visual::before {
+    right: 12px;
+    top: 30px;
+  }
+
+  .nidhi-home .hero-visual::after {
+    left: 12px;
+    bottom: 32px;
+  }
+
+  .nidhi-home .hero-art-main {
+    min-height: 255px;
+  }
+
+  .nidhi-home .hero-art-title {
+    font-size: 47px;
+  }
+
+  .nidhi-home .hero-art-circle {
+    width: 65px;
+    height: 65px;
+    right: 15px;
+  }
+
+  .nidhi-home .hero-art-circle svg {
+    width: 32px;
+  }
+
+  .nidhi-home .hero-float-react {
+    left: -2px;
+    top: 38px;
+  }
+
+  .nidhi-home .hero-float-code {
+    right: -2px;
+    bottom: 37px;
+  }
+
+  .nidhi-home .hero-visual-label {
+    right: 0;
+    top: 0;
+  }
+
+  .nidhi-home .hero-scroll {
+    display: none;
+  }
+
+  .nidhi-home .toolkit-heading-icon {
+    display: none;
+  }
+
+  .nidhi-home .toolkit-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .nidhi-home .tool-card {
+    min-height: 95px;
+  }
+
+  .nidhi-home .projects-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nidhi-home .home-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nidhi-home .project-artwork {
+    height: 220px;
+  }
+
+  .nidhi-home .home-project-info > p {
+    min-height: 0;
+  }
+
+  .nidhi-home .home-cta {
+    margin: 0 15px 35px;
+    padding: 50px 20px;
+    border-radius: 18px;
+  }
+
+  .nidhi-home .home-cta h2 {
+    font-size: 31px;
+  }
+}
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+  .nidhi-home .hero-art-card.hero-profile-card {
+    width: 225px;
+    height: 280px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .nidhi-home .hero-art-card.hero-profile-card,
+  .nidhi-home .hero-profile-image {
+    transition: none;
+  }
+}

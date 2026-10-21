@@ -1,0 +1,77 @@
+/* ===== Nidhi Logo ===== */
+
+.brand-professional {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand-professional::before,
+.brand-professional::after,
+.brand-logo::before,
+.brand-logo::after,
+.brand-name::before,
+.brand-name::after {
+  content: none !important;
+  display: none !important;
+}
+
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #7059df, #9875ff);
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 5px 16px rgba(112, 89, 223, 0.24);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-professional:hover .brand-logo {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(112, 89, 223, 0.32);
+}
+
+.brand-professional .brand-name {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #20243b;
+  font-family: "Manrope", sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-transform: none;
+}
+
+.brand-professional .brand-dot {
+  color: #7059df;
+}
+
+@media (max-width: 480px) {
+  .brand-professional {
+    gap: 9px;
+  }
+
+  .brand-professional .brand-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    font-size: 22px;
+  }
+
+  .brand-professional .brand-name {
+    font-size: 24px;
+  }
+}

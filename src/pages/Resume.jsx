@@ -39,7 +39,16 @@ const Resume = () => {
               </a>
             </p>
 
-            <p>Portfolio: Add your live website link</p>
+            <p>
+              portfolio:{" "}
+            <a
+              href="https://portfolio-97vi2jd9j-movie-app7.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Live Portfolio
+            </a>
+          </p>
           </div>
         </header>
 
